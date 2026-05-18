@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Álvaro Frutos Ruiz">
+  <title>MaletasViajeras</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+  <header class="barra-superior">
+    <div class="contenedor">
+      <h1 class="logotipo">MaletasViajeras</h1>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre el proyecto</a>
+        <a href="#viajes">Mis viajes</a>
+        <a href="#nuevo-viaje">Nuevo viaje</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="portada" id="inicio">
+    <div class="contenedor">
+      <h2>Organiza tus viajes de forma fácil</h2>
+      <p>
+        Crea viajes, añade destinos, planifica actividades y controla tu presupuesto
+        desde una sola aplicación.
+      </p>
+      <a href="#nuevo-viaje" class="boton">Crear un viaje</a>
+    </div>
+  </section>
+
+  <section class="seccion" id="sobre">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">¿Qué ofrece MaletasViajeras?</h2>
+      <div class="grupo-tarjetas">
+        <div class="tarjeta">
+          <h3>Crear viajes</h3>
+          <p>Puedes guardar la información principal de cada viaje, como fechas, descripción y presupuesto.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Añadir destinos</h3>
+          <p>Dentro de cada viaje podrás incluir varias ciudades o lugares que quieras visitar.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Planificar actividades</h3>
+          <p>Organiza visitas, excursiones, reservas o cualquier actividad asociada a un destino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-gris" id="viajes">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Mis viajes</h2>
+
+      <div class="lista-viajes">
+        <div class="tarjeta-viaje">
+          <h3>Viaje a Portugal</h3>
+          <p><strong>Fechas:</strong> 10/07/2025 - 18/07/2025</p>
+          <p><strong>Presupuesto:</strong> 600 €</p>
+          <p>Recorrido por Lisboa.</p>
+          <button class="boton boton-pequeno">Ver detalle</button>
+        </div>
+
+        <div class="tarjeta-viaje">
+          <h3>Escapada a Sevilla</h3>
+          <p><strong>Fechas:</strong> 05/08/2025 - 09/08/2025</p>
+          <p><strong>Presupuesto:</strong> 700 €</p>
+          <p>Viaje corto para visitar monumentos y museos principales.</p>
+          <button class="boton boton-pequeno">Ver detalle</button>
+        </div>
+
+        <div class="tarjeta-viaje">
+          <h3>Fin de semana en Roma</h3>
+          <p><strong>Fechas:</strong> 21/06/2025 - 23/06/2025</p>
+          <p><strong>Presupuesto:</strong> 800 €</p>
+          <p>Viaje breve para conocer la ciudad y disfrutar de su oferta cultural.</p>
+          <button class="boton boton-pequeno">Ver detalle</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="nuevo-viaje">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Crear nuevo viaje</h2>
+
+      <div class="caja-formulario">
+        <form>
+          <label for="titulo">Título del viaje</label>
+          <input type="text" id="titulo" name="titulo" placeholder="Ejemplo: Viaje a Italia">
+
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" rows="4" placeholder="Describe tu viaje..."></textarea>
+
+          <div class="fila-formulario">
+            <div>
+              <label for="fecha_inicio">Fecha de inicio</label>
+              <input type="date" id="fecha_inicio" name="fecha_inicio">
+            </div>
+            <div>
+              <label for="fecha_fin">Fecha de fin</label>
+              <input type="date" id="fecha_fin" name="fecha_fin">
+            </div>
+          </div>
+
+          <label for="presupuesto">Presupuesto (€)</label>
+          <input type="number" id="presupuesto" name="presupuesto" placeholder="Ejemplo: 900">
+
+          <button type="submit" class="boton">Guardar viaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-gris">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Ejemplo de destinos</h2>
+
+      <table>
+        <tr>
+          <th>Ciudad</th>
+          <th>País</th>
+          <th>Fecha llegada</th>
+          <th>Fecha salida</th>
+        </tr>
+        <tr>
+          <td>Roma</td>
+          <td>Italia</td>
+          <td>10/07/2025</td>
+          <td>13/07/2025</td>
+        </tr>
+        <tr>
+          <td>Florencia</td>
+          <td>Italia</td>
+          <td>13/07/2025</td>
+          <td>16/07/2025</td>
+        </tr>
+        <tr>
+          <td>Venecia</td>
+          <td>Italia</td>
+          <td>16/07/2025</td>
+          <td>18/07/2025</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; MaletasViajeras - Proyecto de Lenguaje de Marcas</p>
+    </div>
+  </footer>
+<script src="assets/js/javascript.js"></script>
+</body>
+</html>
