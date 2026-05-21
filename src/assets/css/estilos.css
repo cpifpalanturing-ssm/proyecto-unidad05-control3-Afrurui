@@ -233,3 +233,17 @@ footer {
     font-size: 24px;
   }
 }
+
+#mensaje-operacion {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.tarjeta-viaje .boton {
+  margin-right: 10px;
+}
+
+.tarjeta-viaje .boton:last-child {
+  margin-right: 0;
+}
